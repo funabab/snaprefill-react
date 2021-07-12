@@ -1,0 +1,12 @@
+.loading svg {
+  @apply w-20 h-20;
+
+  & #icon-cam-icon {
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+.loading-screen svg #icon-cam-icon {
+  animation: anim-rotate 2s ease-in-out infinite;
+}

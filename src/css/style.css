@@ -1,0 +1,16 @@
+html,
+body,
+#root {
+  @apply w-full h-full;
+}
+
+.btn {
+  @apply rounded px-6 py-2 uppercase text-sm hover:opacity-90 transition duration-200;
+}
+
+.content-container {
+  @apply flex-1 border-t-4 border-primary lg:border-t-0 lg:border-l-4;
+  &.no-border {
+    @apply border-0;
+  }
+}

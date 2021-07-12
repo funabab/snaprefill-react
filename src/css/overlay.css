@@ -1,0 +1,16 @@
+.overlay svg {
+  @apply w-full h-full;
+
+  & rect {
+    fill: none;
+    stroke: theme('colors.red.600');
+    stroke-width: 0.2rem;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+}
+
+.processing svg rect {
+  opacity: 1;
+  animation: anim-stroke-offset 2s linear infinite;
+}

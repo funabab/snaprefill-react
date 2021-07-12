@@ -1,0 +1,21 @@
+@keyframes anim-rotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes anim-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes anim-stroke-offset {
+  to {
+    stroke-dashoffset: 100%;
+  }
+}

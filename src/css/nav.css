@@ -1,0 +1,28 @@
+nav {
+  @apply absolute top-0 left-0 w-full h-20 flex justify-center items-center lg:top-0 lg:h-full lg:w-32 lg:flex-col transition duration-300;
+  &.text-dark {
+    @apply bg-opacity-0 !important;
+
+    & a {
+      @apply text-grey-500 !important;
+    }
+  }
+
+  & ul {
+    @apply text-2xl text-grey-50 text-center flex gap-14 lg:flex-col lg:gap-6;
+
+    & li {
+      & a {
+        @apply transition duration-300 block;
+
+        & :last-child {
+          @apply block uppercase text-xs mt-1;
+        }
+
+        &.active {
+          @apply text-primary-textDark transform scale-110 !important;
+        }
+      }
+    }
+  }
+}
