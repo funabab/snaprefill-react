@@ -47,6 +47,7 @@ module.exports = {
         }),
         new GenerateSW({
           skipWaiting: true,
+          maximumFileSizeToCacheInBytes: 4194304,
         }),
       ],
     },
