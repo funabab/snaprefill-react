@@ -14,17 +14,5 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <div id="loading-container" class="absolute left-0 top-0 z-20"></div>
-    <script>
-      if ('serviceWorker' in window.navigator) {
-        window.navigator.serviceWorker
-          .register('/service-worker.js')
-          .then(() => {
-            console.info('ServiceWorker: Registered')
-          })
-          .catch((err) => {
-            console.error(err)
-          })
-      }
-    </script>
   </body>
 </html>

@@ -2,7 +2,6 @@ const webpack = require('webpack')
 const package = require('./package.json')
 const path = require('path')
 const WebpackPWAManifest = require('webpack-pwa-manifest')
-const { GenerateSW } = require('workbox-webpack-plugin')
 
 module.exports = {
   style: {
@@ -44,10 +43,6 @@ module.exports = {
               purpose: 'maskable',
             },
           ],
-        }),
-        new GenerateSW({
-          skipWaiting: true,
-          maximumFileSizeToCacheInBytes: 4194304,
         }),
       ],
     },

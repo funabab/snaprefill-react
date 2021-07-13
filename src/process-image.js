@@ -1,3 +1,6 @@
+// Rough Implementation of "Adaptive Thresholding Using the Integral Image
+// Adapted From - https://github.com/pedrofrodenas/image-thresholding-OCR
+
 function workerScriptBootstrap() {
   function ImageGrey(imagedata) {
     this.width = imagedata.width
